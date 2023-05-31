@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Preview</title>
+    <!-- Add your CSS styles here -->
+</head>
+<body>
+    <h1>Preview</h1>
+    <p>Name: {{ name }}</p>
+    <p>Twitter Link: {{ twitter_link }}</p>
+    <p>Facebook Link: {{ facebook_link }}</p>
+    <p>Project Details: {{ project_details }}</p>
+    <p>Deadline: {{ deadline }}</p>
+    <p>Course/Year/Grade: {{ course_year_grade }}</p>
+    <p>Budget: {{ budget }}</p>
+    <p>Payment Mode: {{ payment_mode }}</p>
+    <p>Email: {{ email }}</p>
+
+    <form action="/success" method="post">
+        <button type="submit">Submit</button>
+    </form>
+
+    <form action="/form" method="get">
+        <button type="submit">Go Back</button>
+    </form>
+</body>
+</html>
